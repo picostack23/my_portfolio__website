@@ -3359,7 +3359,7 @@ input, select, textarea {
 
 	}
 
-	/* --- Global Document Resets 
+	/* --- Global Document Resets --- */
 * {
     margin: 0;
     padding: 0;
@@ -3367,13 +3367,13 @@ input, select, textarea {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
+/*body {
     background-color: #0f172a; /* Premium Dark Navy Slate 
     color: #f8fafc;
     padding: 60px 20px;
-}
+}*/
 
-/* --- Section Formatting --- 
+/* --- Section Formatting --- */
 .projects-section {
     width: 100%;
     max-width: 1200px;
@@ -3394,37 +3394,38 @@ body {
 
 .section-header p {
     font-size: 1.1rem;
-    color: #94a3b8; /* Muted slate gray text 
+    color: #94a3b8; /* Muted slate gray text */
     max-width: 600px;
     margin: 0 auto;
 }
-/* --- CSS Responsive Grid Layout --- 
+
+/* --- CSS Responsive Grid Layout --- */
 .projects-grid {
     display: grid;
-    /* Automatically builds columns based on screen room (min width 320px) 
+    /* Automatically builds columns based on screen room (min width 320px) */
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
 }
 
-/* --- Interactive Project Cards --- 
+/* --- Interactive Project Cards --- */
 .project-card {
-    background-color: #1e293b; /* Dark card background 
+    background-color: #1e293b; /* Dark card background */
     border-radius: 12px;
     overflow: hidden;
     border: 1px solid #334155;
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-/* Smooth pop out action when user hovers 
+/* Smooth pop out action when user hovers */
 .project-card:hover {
     transform: translateY(-8px);
-    border-color: #38bdf8; /* Brighter accent blue boundary link 
+    border-color: #38bdf8; /* Brighter accent blue boundary link */
 }
 
 .project-image img {
     width: 100%;
     height: 200px;
-    object-fit: cover; /* Keeps imagery structured inside box sizes 
+    object-fit: cover; /* Keeps imagery structured inside box sizes */
     display: block;
 }
 
@@ -3432,7 +3433,7 @@ body {
     padding: 25px;
 }
 
-/* --- Technology Badges --- 
+/* --- Technology Badges --- */
 .project-tags {
     display: flex;
     gap: 8px;
@@ -3463,7 +3464,7 @@ body {
     margin-bottom: 25px;
 }
 
-/* --- Action Button Wrappers --- 
+/* --- Action Button Wrappers --- */
 .project-links {
     display: flex;
     gap: 12px;
@@ -3480,7 +3481,7 @@ body {
     transition: background 0.2s ease, color 0.2s ease;
 }
 
-/* Code button styles 
+/* Code button styles */
 .code-btn {
     background-color: transparent;
     color: #f8fafc;
@@ -3491,7 +3492,7 @@ body {
     background-color: #475569;
 }
 
-/* Live Demo button styles 
+/* Live Demo button styles */
 .live-btn {
     background-color: #38bdf8;
     color: #0f172a;

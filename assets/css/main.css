@@ -3358,3 +3358,146 @@ input, select, textarea {
 			}
 
 	}
+
+	/* --- Global Document Resets --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a; /* Premium Dark Navy Slate */
+    color: #f8fafc;
+    padding: 60px 20px;
+}
+
+/* --- Section Formatting --- */
+.projects-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    color: #94a3b8; /* Muted slate gray text */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* --- CSS Responsive Grid Layout --- */
+.projects-grid {
+    display: grid;
+    /* Automatically builds columns based on screen room (min width 320px) */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+/* --- Interactive Project Cards --- */
+.project-card {
+    background-color: #1e293b; /* Dark card background */
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #334155;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* Smooth pop out action when user hovers */
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: #38bdf8; /* Brighter accent blue boundary link */
+}
+
+.project-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Keeps imagery structured inside box sizes */
+    display: block;
+}
+
+.project-content {
+    padding: 25px;
+}
+
+/* --- Technology Badges --- */
+.project-tags {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background-color: #0c4a6e;
+    color: #38bdf8;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.project-content h3 {
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.project-content p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* --- Action Button Wrappers --- */
+.project-links {
+    display: flex;
+    gap: 12px;
+}
+
+.proj-btn {
+    flex: 1;
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* Code button styles */
+.code-btn {
+    background-color: transparent;
+    color: #f8fafc;
+    border: 1px solid #475569;
+}
+
+.code-btn:hover {
+    background-color: #475569;
+}
+
+/* Live Demo button styles */
+.live-btn {
+    background-color: #38bdf8;
+    color: #0f172a;
+}
+
+.live-btn:hover {
+    background-color: #0ea5e9;
+}
